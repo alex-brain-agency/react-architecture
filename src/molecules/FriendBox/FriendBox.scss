@@ -1,0 +1,134 @@
+.FriendBox {
+  background: #fff;
+  color: #888888;
+  padding: 11px 11px 28px 11px;
+  font-size: 9.0pt;
+  width: 390px;
+  max-width: 390px;
+  overflow: hidden;
+  border-radius: 2px;
+
+  &__userAvatar {
+    img {
+      max-width: 54px;
+      max-height: 54px;
+      border-radius: 50%;
+      margin-right: 9px;
+      transition: all .5s;
+
+      &:hover {
+        transform: rotate(-30deg);
+      }
+    }
+  }
+
+  &__counterActivity {
+    font-size: 7.0pt;
+    text-align: center;
+    margin-top: 3px;
+    padding: 6px 0;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+
+    span {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__userInfo {
+    max-width: 210px;
+  }
+
+  &__userName {
+    font-size: 10.0pt;
+    font-weight: bold;
+    margin: 4px 0 -1px 0;
+
+    span:hover {
+      color: #0088d3;
+    }
+
+    .blue-user-ico {
+      zoom: 0.65;
+      float: left;
+      margin: 3px 9px 0 0;
+    }
+  }
+
+  a, p {
+    color: #315583;
+    font-size: 9.0pt;
+    line-height: 0;
+  }
+
+  &__userLocation {
+
+    div[class*="icon"] {
+      width: 15px;
+      height: 11px;
+      display: block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 2px 0 0 4px;
+    }
+  }
+
+  &__iconsPanel {
+    position: absolute;
+    right: 13px;
+    top: 12px;
+    text-align: right;
+
+    i {
+      margin-right: 10px;
+      cursor: pointer;
+      margin-left: auto;
+    }
+
+    .blue-add-message-ico {
+      zoom: 0.9;
+    }
+
+    .blue-star-ico {
+      padding-left: 16px;
+      margin-top: 1px;
+      line-height: 4px;
+      color: #4589c4;
+    }
+
+    button {
+      min-width: 78px;
+      margin-top: 8px;
+    }
+
+    .following {
+      color: #F26818
+    }
+  }
+
+  &__statusHistory {
+    text-align: center;
+    line-height: 20px;
+    margin-top: 1px;
+  }
+
+  &__statusRequest {
+
+    vertical-align: middle;
+    height: 27px;
+    margin-top: 1px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+
+    .small-fb-ico {
+      position: absolute;
+      margin: 5px 0 0 12px;
+    }
+
+    > * {
+      flex: 1 1 auto;
+    }
+  }
+
+}

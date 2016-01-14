@@ -1,0 +1,69 @@
+$primary-color: #e97900;
+$primary-color-light: lighten($primary-color, 15%);
+$primary-gradient: lighten($primary-color, 15%), $primary-color;
+$secondary-color: #097d99;
+$secondary-color-light: lighten($secondary-color, 15%);
+$secondary-gradient: lighten($secondary-color, 15%), $secondary-color;
+
+$primary-background-color: #f3f3f3;
+$primary-off-background-color: #EBEAE5;
+
+$page-background-color: #414141;
+$page-background: $page-background-color;
+
+$error-fg-color: #ca5959;
+$error-bg-color: #ffe1e1;
+
+$success-fg-color: #45ad62;
+
+$link-color: #09819d;
+$link-hover-color: #6d929b;
+
+// On-white colors
+$light-grey: #999;
+$light-color: #787878;
+$semi-light-color: #606060;
+$semi-dark-color: #505050;
+$dark-color: #555;
+$near-black-color: #292929;
+
+// On-dark colors
+$light-grey-on-dark: #ccc;
+
+
+$background-light-gray: #DAD7CF;
+
+// orange colors
+$active-orange: #E74D2D;
+
+// pallate colors:gradient
+$aqua-color: #33B0BC;
+$aqua-color-secondary: #1A595F;
+
+$blue-color: #3E6B9E;
+$blue-color-secondary: #243F5B;
+
+$darkRed-color: #A83226;
+$darkRed-color-secondary: #88281E;
+
+$darkBlue-color: #084F87;
+$darkBlue-color-secondary: #091A33;
+
+$pastel-color: #0EAAC9;
+$pastel-color-secondary: #097D99;
+
+// New Colors v2.0
+$background-color-near-white: #ebebeb;
+$white-text: #ffffff;
+$background-light-blue: #01C7FB;
+
+$background-blue-gradient: lighten(#4589C4, 15%), #266DB1;
+$background-blue: #4589C4;
+
+$text-aqua: #2b98f0;
+
+$background-tabs: linear-gradient(to bottom, #374858, #313e4d);
+$active-tab-border: #f06829;
+
+$border-light-gray: #c8c8c8;
+$border-aqua: #3599d0;

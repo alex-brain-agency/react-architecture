@@ -1,0 +1,43 @@
+.StepBox {
+
+  color: #2f2f2f;
+  text-align: center;
+
+  h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  [class*="big-ico-"] {
+    display: inline-block;
+    width: 12rem;
+    height: 12rem;
+    max-width: 100%;
+  }
+
+  .big-ico-mark {
+    background: url(../../../assets/images/molecules/steps-box/icon-1.png) center center no-repeat;
+  }
+
+  .big-ico-location {
+    background: url(../../../assets/images/molecules/steps-box/icon-2.png) center center no-repeat;
+  }
+
+  .big-ico-ticket {
+    background: url(../../../assets/images/molecules/steps-box/icon-3.png) center center no-repeat;
+  }
+
+  [class*="colors-arrow"] {
+    display: block;
+    height: 12rem;
+    background: url(../../../assets/images/molecules/steps-box/arrow-1.png) right center no-repeat;
+    margin: 0 2rem;
+    width: 245px;
+  }
+
+  .colors-arrow-2 {
+    background-image: url(../../../assets/images/molecules/steps-box/arrow-2.png);
+  }
+}
+
+

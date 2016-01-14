@@ -1,0 +1,42 @@
+#!/usr/bin/env babel-node
+import webpack from 'webpack';
+import makeWebpackConfig from '../dev/makeWebpackConfig';
+import getConfig from '../dev/getConfig';
+import yargs from 'yargs';
+
+const {argv} = yargs
+  .help('h').alias('h', 'help')
+  .describe('asset-url', 'where assets are to be served from')
+  .describe('main-url', 'the main web server root')
+  .boolean('dev-pages').describe('dev-pages', 'instead of running the main app, run the individual component pages')
+  .epilog('Build modes:\nBuild mode could be controlled using NODE_ENV environment variable.\nDefault is dev(debug) build.\nTo run production build, use `env` command like this: \n`env NODE_ENV=production ./build`')
+
+var production = true;
+
+if(process.env.NODE_ENV && process.env.NODE_ENV == 'production') {
+  production = true;
+}
+
+var config = {
+  devServer: false,
+  production: production,
+  watch: false,
+  devPages: argv.devPages
+};
+
+if (argv.assetUrl) config.assetUrl = argv.assetUrl;
+if (argv.mainUrl) config.mainUrl = argv.mainUrl;
+
+const webpackConfig = makeWebpackConfig(getConfig(config));
+console.error('Building with config', webpackConfig);
+console.error('Building with opts', config);
+
+var compiler = webpack(Object.assign({}, webpackConfig));
+compiler.run((err, stats) => {
+  if (err) {
+    console.error('Build failed!');
+    console.error(err);
+    process.exit(7);
+  }
+  console.error('Build success!');
+});

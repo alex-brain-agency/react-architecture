@@ -1,0 +1,94 @@
+.UserRanking {
+  background: #fff;
+  color: #888888;
+  font-size: 9.0pt;
+  width: 410px;
+  max-width: 410px;
+  overflow: hidden;
+  border-radius: 2px;
+  border: 1px solid #01c7fb;
+  box-shadow: 5px 7px 8px #838383;
+  padding: 0 0 13px 0;
+
+  &__header {
+    background: #344252;
+    height: 49px;
+    padding-top: 1px;
+    align-items: center;
+    margin-bottom: 9px;
+
+    h4 {
+      color: #fff;
+      font-size: 12pt;
+      text-overflow: ellipsis;
+      max-width: 205px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .close-white-ico {
+      position: absolute;
+      right: 13px;
+      top: 11px;
+      cursor: pointer;
+    }
+  }
+
+  &__topUser {
+    background: #fff;
+    border-radius: 3px;
+    display: flex;
+    padding: 4px 13px 2px 6px;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #266DB1;
+    font-size: 8pt;
+    position: absolute;
+    right: 39px;
+    top: 13px;
+
+    .blue-rating-ico {
+      margin-right: 7px;
+    }
+  }
+
+  &__userAvatar {
+    margin-left: 9px;
+
+    img {
+      max-width: 36px;
+      max-height: 36px;
+      border-radius: 50%;
+      margin-right: 14px;
+      transition: all .5s;
+      border: 1px solid #fff;
+
+      &:hover {
+        transform: rotate(-30deg);
+      }
+    }
+  }
+
+  &__info {
+    span {
+      margin: 4px 0 4px 12px;
+      color: #2196F3;
+      font-weight: bold;
+      text-overflow: ellipsis;
+      max-width: 390px;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 10pt;
+    }
+    
+    i {
+      margin-right: -6px;
+    }
+
+    [class*="star-ico"] {
+      margin: 2px -3px 0 5px;
+    }
+  }
+
+}

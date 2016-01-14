@@ -1,0 +1,256 @@
+i {
+
+  &[class*=-ico] {
+    background: url('../../assets/images/sprites/ico-sprite.png') no-repeat;
+    display: block;
+  }
+
+  &.blue-world-ico {
+     background-position: -47px -30px;
+     width: 20px;
+     height: 20px;
+   }
+
+  &.blue-add-message-ico {
+    background-position: -71px -28px;
+    width: 20px;
+    height: 21px;
+  }
+
+  &.blue-rating-ico {
+    background-position: -168px -30px;
+    width: 16px;
+    height: 18px;
+  }
+
+  &.blue-star-ico {
+    background-position: -163px -177px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &.blue-user-ico {
+    background-position: -224px -3px;
+    width: 21px;
+   height: 21px;
+  }
+
+  &.small-fb-ico {
+    background-position: -253px -174px;
+    width: 19px;
+    height: 19px
+  }
+
+  &.close-white-ico {
+    background-position:  -320px -110px;
+    width: 10px;
+    height: 10px;
+  }
+
+  //Rating icons
+  &.blue-rating-ico {
+    background-position: -168px -30px;
+    width: 24px;
+    height: 18px;
+  }
+
+  &.red-rating-ico {
+    background-position: -194px -30px;
+    width: 24px;
+    height: 18px;
+  }
+
+  &.orange-rating-ico {
+    background-position: -246px -30px;
+    width: 24px;
+    height: 18px;
+  }
+
+  &.green-rating-ico {
+    background-position: -220px -30px;
+    width: 24px;
+    height: 18px;
+  }
+
+  &.white-album-ico {
+    background-position: -230px -111px;
+    width: 25px;
+    height: 19px;
+  }
+
+  &.white-gift-ico {
+    background-position: -175px -84px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &.white-people-ico {
+    background-position: -121px -84px;
+    width: 30px;
+    height: 20px;
+  }
+
+  &.white-stash-ico {
+    background-position: -265px -56px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &.blue-plus-ico {
+    background-position: -273px -29px;
+    width: 23px;
+    height: 22px;
+  }
+
+  &.gray-search-ico {
+    background-position: -173px -157px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &.blue-notes-ico {
+    background-position: -231px -177px;
+    width: 20px;
+    height: 16px;
+  }
+
+  &.blue-geo-ico {
+    background-position: -131px -30px;
+    width: 16px;
+    height: 20px;
+  }
+
+  &.grey-close-box-ico {
+    background-position: -28px -178px;
+    width: 14px;
+    height: 14px;
+  }
+
+  &.white-add-image-ico {
+    background-position: -284px -194px;
+    width: 21px;
+    height: 21px;
+  }
+
+  &.white-add-folder-ico {
+    background-position: -308px -195px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &.white-rename-folder-ico {
+    background-position: -330px -195px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &.blue-tick-ico {
+    background-position: -339px 0;
+    width: 11px;
+    height: 8px;
+  }
+
+  //Editor icons
+  &.editor-arrow-right-ico {
+    background-position: 0 -197px;
+    width: 18px;
+    height: 17px;
+  }
+
+  &.editor-arrow-left-ico {
+    background-position: -20px -197px;
+    width: 18px;
+    height: 17px;
+  }
+
+  &.editor-bullets-ico {
+    background-position: -40px -197px;
+    width: 20px;
+    height: 17px;
+  }
+
+  &.editor-text-right-ico  {
+    background-position: -63px -198px;
+    width: 20px;
+    height: 15px;
+  }
+
+  &.editor-text-center-ico  {
+    background-position: -85px -198px;
+    width: 20px;
+    height: 15px;
+  }
+
+  &.editor-text-left-ico  {
+    background-position: -107px -198px;
+    width: 20px;
+    height: 15px;
+  }
+
+  &.editor-numbering-ico  {
+    background-position: -129px -196px;
+    width: 20px;
+    height: 19px;
+  }
+
+  &.editor-indent-right-ico  {
+    background-position: -150px -198px;
+    width: 20px;
+    height: 15px;
+  }
+
+  &.editor-indent-left-ico {
+    background-position: -173px -198px;
+    width: 20px;
+    height: 15px;
+  }
+
+  &.editor-bold-ico {
+    background-position: -196px -195px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &.editor-italic-ico {
+    background-position: -218px -195px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &.editor-underline-ico {
+    background-position: -240px -195px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &.editor-strike-ico {
+    background-position: -262px -195px;
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+$grey-color: #646363;
+//Css arrows
+.delta-arrow {
+  border: 5px solid transparent;
+  width: 0;
+  height: 0;
+
+  &.up-grey {
+    border-top: 5px solid $grey-color;
+  }
+
+  &.down-grey {
+    border-bottom: 5px solid $grey-color;
+  }
+
+  &.left-grey {
+    border-right: 5px solid $grey-color;
+  }
+
+  &.right-grey {
+    border-left: 5px solid $grey-color;
+  }
+}

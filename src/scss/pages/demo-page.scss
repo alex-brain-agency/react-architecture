@@ -1,0 +1,89 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #efefef;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: $base-font-color;
+  font-size: $base-font-size;
+}
+
+#demo-page {
+  height: 100%;
+
+  & > #root {
+    flex: 1;
+  }
+}
+
+.top-bar {
+  background: #fff;
+  border-bottom: 0.7rem solid #FFDD00;
+}
+
+.btn-demo-pages {
+  background: darkorange;
+  padding: 10px 5px;
+  box-shadow: 0 0 10px #ffbb4f;
+  width: 150px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.component-demo-pages {
+  h1 {
+    font-size: 20px;
+    color: darkorange;
+    margin: 20px 20px 5px 20px;
+  }
+
+  pre {
+    color: #888;
+    background: #FFFBF6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 15px #FFA978;
+  }
+
+  h2 {
+    color: #888;
+    margin: 0;
+  }
+}
+
+button, a {
+  i {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+  }
+}
+
+// Utility Classes
+a {
+  color: #444444;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.rsvg-icon {
+  &, & > svg {
+    display: inline-block;
+    height: 1em;
+    width: auto;
+    vertical-align: top;
+  }
+}

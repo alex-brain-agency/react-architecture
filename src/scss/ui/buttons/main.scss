@@ -1,0 +1,77 @@
+$grey-btn-c: #e0e0e0;
+$blue-btn-c: #2e98d2;
+$red-btn-c: #f14541;
+
+button,
+a[class*="btn"] {
+  transition: all 1s;
+}
+
+.border-btn {
+  border-radius: 2px;
+  border: 1px solid #f26819;
+  padding: 4px 5px;
+  background: #fff;
+  color: #f26819;
+  font-size: 10pt;
+
+  &.grey {
+    border-color: #999;
+    color: #999;
+  }
+}
+
+.small-btn {
+    color: #fff;
+    cursor: pointer;
+    background: rgba(242, 104, 25, 1);
+    background: linear-gradient(to bottom, rgba(242, 104, 25, 1) 0%, rgba(231, 76, 45, 1) 100%);
+
+  &.grey {
+    color: #888;
+    background: #f8f8f8;
+    line-height: 28px;
+    text-align: center;
+    background: rgba(233, 231, 235, 1);
+    background: linear-gradient(to bottom, rgba(233, 231, 235, 1) 0%, rgba(194, 192, 196, 1) 100%);
+  }
+}
+
+[class*="popup-btn"] {
+
+  font-size: 10pt;
+
+  &.popup-btn-big {
+    padding: 10px 20px;
+  }
+
+  display: block;
+  color: #434343;
+  padding: 3px 0;
+  min-width: 70px;
+  font-weight: bold;
+
+  &:hover {
+    background-color: darken( $grey-btn-c, 10% );
+    border-radius: 4px;
+  }
+
+  &.blue {
+    background: $blue-btn-c;
+    color: #fff;
+
+    &:hover {
+      background-color: lighten( $blue-btn-c, 10% );
+    }
+  }
+
+  &.red {
+    background: $red-btn-c;
+    color: #fff;
+
+    &:hover {
+      background-color: lighten( $red-btn-c, 10% );
+    }
+  }
+}
+
