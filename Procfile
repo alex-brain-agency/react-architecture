@@ -1,0 +1,1 @@
+web: env NODE_ENV=production ./scripts/build --prod
