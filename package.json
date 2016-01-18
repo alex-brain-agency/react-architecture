@@ -4,8 +4,8 @@
   "description": "Atomic architecture for react",
   "main": "src/app.js",
   "scripts": {
-    "test": "env NODE_ENV=test ./scripts/test",
-    "postinstall": "npm run-script start-dev",
+    "test": "env NODE_ENV=test ./scripts/tes",
+    "postinstall": "npm run-script build",
     "build": "env NODE_ENV=production ./scripts/build --prod",
     "start": "env NODE_ENV=production ./scripts/dev --prod --only-main-server",
     "start-dev": "env NODE_ENV=dev ./scripts/dev",
