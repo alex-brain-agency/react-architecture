@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "env NODE_ENV=test ./scripts/tes",
-    "postinstall": "npm run-script build",
+    "postinstall": "npm start",
     "build": "env NODE_ENV=production ./scripts/build --prod",
     "start": "env NODE_ENV=production ./scripts/dev --prod --only-main-server",
     "start-dev": "env NODE_ENV=dev ./scripts/dev",
