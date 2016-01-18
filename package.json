@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Atomic architecture for react",
   "main": "src/app.js",
+  "engines": {
+    "node": "5.4.0",
+    "npm": "3.3.12"
+  },
   "scripts": {
     "test": "env NODE_ENV=test ./scripts/tes",
     "postinstall": "npm run-script build",
